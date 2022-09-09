@@ -1,0 +1,30 @@
+@import '../../../../../dist/scss/variables.scss';
+
+/** 
+* Utilizado para referenciar um component genérico sem especificar o nome
+* :host = todo o componente terá este estilo
+* :input = o input dentro do componente vai seguir este estilo
+*/
+:host {
+  display: flex;
+  justify-content: center;
+  margin-top: -20px;
+
+  input{
+    width: 80%;
+
+    border: none;
+    background: $tertiary-background-color;
+
+    font-size: 16px;
+    color: $secondary-text-color;
+    text-align: center;
+
+    padding: 10px;
+    box-sizing: border-box;
+
+    &::placeholder{
+      color: $secondary-text-color;
+    }
+  }
+}
